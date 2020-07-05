@@ -1,0 +1,32 @@
+[
+  {
+    "id": "N",
+    "name": "Nala",
+    "age": "1",
+    "profilePic": "perro1.jpg"
+  },
+{
+    "id": "O",
+    "name": "Ollie",
+    "age": "2",
+    "profilePic": "perro2.jpg"
+  },
+  {
+    "id": "M",
+    "name": "Morena",
+    "age": "7",
+    "profilePic": "perro3.jpg"
+  },
+  {
+    "id": "B",
+    "name": "Buddy",
+    "age": "3",
+    "profilePic": "perro4.jpg"
+  },
+  {
+    "id": "U",
+    "name": "Uma",
+    "age": "3",
+    "profilePic": "perro5.jpg"
+  }
+] 
