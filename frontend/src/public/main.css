@@ -1,0 +1,11 @@
+.htop { 
+  position: relative;
+  text-align: center;
+  min-height: auto;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5861a849cd0f68c6c07be337/1544025340394-U6E9ML13GBXCCLYHK68U/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/naturaleza.jpg);
+  color: yellow;
+}
+.subtitle {
+  margin-left: 5px;
+  margin-right: 5px;
+}
