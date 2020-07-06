@@ -1,9 +1,7 @@
-import petsData from "../mock/pets.json";
+import petsController from "../controller/pets.controller";
 
 const petsRouter = (server) => {
-  server.get("/api/v1/pets", (req, res) => {
-    return res.status(200).send(petsData);
-  });
+  server.get("/api/v1/pets", petsController.getPets);
 }
 
 export default petsRouter;

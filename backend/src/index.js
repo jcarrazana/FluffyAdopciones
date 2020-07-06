@@ -2,14 +2,29 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
+import mongoose from "mongoose";
 
 import env from "./config/env";
-import setRouter from "./router/index.js";
+import setRouter from "./router/index";
 
-const startServer = () => {
+const startServer = async () => {
   const server = express();
   const port = env.PORT || 8080;
 
+  //conectamos con MongoDB
+  const url = `mongodb+srv://${env.DB_USER}:${env.DB_PASS}${env.MONGO_URL}`;
+  
+  try {
+    const connection = await mongoose.connect(url, {
+      useNewUrlParser: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+      useUnifiedTopology: true
+    });
+  } catch (err) {
+    throw err;
+  }  
+  
   //conectamos los middlewares de terceros
   server.use(cors());
   server.use(helmet());
