@@ -48,26 +48,27 @@
 	<section id="Adopciones">
 			</div>
         <div class="row justify-content-center">
-
+					</ul>
           {{#each petsData}}
+					<li>
             <div class="card-deck p-3">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="/img/{{this.profilePic}}" height="200em" alt="Card image">
+                    <img class="card-img-top" src="{{this.profilePic}}" height="200em" alt="Card image">
                     <div class="card-body">
                         <h5 class="card-title">{{this.name}}</h5>
-                        <p class="card-text">{{this.info}}.</p>
-												<p class="card-text">{{this.age}}.</p>
-                        <p class="card-text">Zona: {{this.place}}.</p>
-                        <p class="card-text">Fecha que se perdio: {{this.date}}.</p>
-                        <a href="/animal/{{petsData.objectId}}" class="btn btn-info">Ver info de {{this.name}}</a>
+												<p class="card-text">Edad:{{this.age}}.</p> 
+                        <p class="card-text">Género: {{this.gender}}.</p>
+                        <p class="card-text">Descripción de la mascota: {{this.description}}.</p>
                     </div>
                 </div>
             </div>
-            {{/each}}
+						</li>
+          {{/each}}
+					</ul>
         </div>
       </div>
 	</section>
-	<section id="experiences">
+	<section id="experiences"> 
     <div></div>
 	</section>
 	<section id="contact">
